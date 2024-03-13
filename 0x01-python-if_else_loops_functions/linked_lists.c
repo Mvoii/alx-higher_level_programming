@@ -39,7 +39,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
-		retrn (NULL);
+		return (NULL);
 
 	new->n = n;
 	new->next = NULL;
@@ -48,7 +48,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new;
 	else
 	{
-		while (current-> != NULL)
+		while (current->next != NULL)
 			current = current->next;
 		current->next = new;
 	}
@@ -61,7 +61,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
  * @head: pointer to list to be freed
  * Return: void
  */
-void free_listint_t(listint_t *head)
+void free_listint(listint_t *head)
 {
 	listint_t *current;
 

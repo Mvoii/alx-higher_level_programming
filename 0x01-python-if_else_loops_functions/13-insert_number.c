@@ -10,7 +10,7 @@
  *
  * Return: return description
  */
-listint_t *insert_node(listint_y **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *new, *current, *prevnode;
 	int count;
@@ -20,7 +20,7 @@ listint_t *insert_node(listint_y **head, int number)
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = nummber;
+	new->n = number;
 	new->next = *head;
 	if (*head == NULL)
 	{
@@ -35,7 +35,7 @@ listint_t *insert_node(listint_y **head, int number)
 			if (count == 1)
 				*head = new;
 			else
-				prevnode-> = new;
+				prevnode-> next = new;
 			new->next = current;
 			return (new);
 		}
