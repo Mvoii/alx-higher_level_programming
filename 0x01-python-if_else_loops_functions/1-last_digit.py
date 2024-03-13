@@ -12,5 +12,5 @@ if last_number == 0:
 elif last_digit > 5:
     str = "and is greater than 5"
 elif last_digit < 6 and last_digit != 0:
-    str = "and is less thann 6 and not 0
+    str = "and is less thann 6 and not 0"
 print(f"Last diit of {number:d} is {last_digit:d} {str}")
