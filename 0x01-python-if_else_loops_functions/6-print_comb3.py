@@ -5,4 +5,5 @@ for first_digit in range(10):
             print("{one}{two}".format(one=first_digit,
                                       two=second_digit), end="\n")
         elif first_digit < second_digit and first_digit != second_digit:
-            print("{one}{two}".format(one=first_digit, two=second_digit), end=", ")
+            print("{one}{two}".format(one=first_digit,
+                                      two=second_digit), end=", ")
