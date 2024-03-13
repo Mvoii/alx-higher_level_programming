@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 for i in range(97, 123):
     if i != 101 and i != 113:
-        print("{i}".format(character=chr(i)), end="")
+        print("{character}".format(character=chr(i)), end="")
