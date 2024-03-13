@@ -49,5 +49,5 @@ int main(void)
 
 	free_listint(head);
 
-	retrun (0);
+	return (0);
 }
