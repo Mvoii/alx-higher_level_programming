@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    if int(idx) < 0:
-        return None
-    elif int(idx) > (len(my_list) - 1):
-        return None
+
+def replace_in_list(my_list, idx, element):
+    if idx < 0:
+        return my_list
+    elif idx >= len(my_list):
+        return my_list
     else:
-        return my_list[int(idx)]
+        my_list.pop(idx)
+        my_list.insert(idx, element)
+        return my_list
