@@ -1,10 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""the module is 6-base_geometry"""
+"""The module is 6-base_geometry"""
+
 
 class BaseGeometry:
-    """create an empty class"""
+    """Defines BaseGeometry class"""
 
     def area(self):
-        """raise an exception"""
+        """Raise an exception"""
         raise Exception("area() is not implemented")

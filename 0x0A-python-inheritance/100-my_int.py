@@ -1,13 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """Write a class MyInt that inherits from int"""
 
+
 class MyInt(int):
-    """A suclass of the class int"""
+    """A subclass of class int"""
     def __eq__(self, other):
-        """sets the behavious of the == operator"""
+        """sets the behaviour of == """
         return int(self) != other
 
     def __ne__(self, other):
-        """sets the != behaviour"""
+        """sets the != behavior"""
         return int(self) == other

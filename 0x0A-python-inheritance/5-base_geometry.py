@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""create an empty class"""
+"""Create an empty class"""
+
 
 class BaseGeometry:
-    """create an empty class"""
+    """Empty class"""
     pass

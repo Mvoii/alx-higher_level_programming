@@ -1,9 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""function that adds a new attr to an obj if its possible"""
+""" function that adds a new attribute to an object if it’s possible"""
+
 
 def add_attribute(obj, name, value):
-    """adds new attr to an obj"""
+    """adds new attribute to an object"""
     if not hasattr(obj, '__dict__'):
-        raise TypeError("Can't add new attribute")
+        raise TypeError("can't add new attribute")
     setattr(obj, name, value)

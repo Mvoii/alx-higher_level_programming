@@ -1,13 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""the module is 1-my_list"""
+"""The module is 1-my_list"""
 
-class Mylist(list):
-    """class Mylist"""
+
+class MyList(list):
+    """A subclass of list"""
     def __init__(self):
-        """init"""
+        """initialize the object"""
         super().__init__()
 
     def print_sorted(self):
-        """print_sorted"""
+        """prints the sorted list"""
         print(sorted(self))
