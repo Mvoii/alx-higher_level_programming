@@ -1,15 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""Write a string from a text file"""
+"""Write a string from a textfile"""
+
 
 def write_file(filename="", text=""):
     """
-    a function that writes a string to a textfile (UTF8) and returns the number of characters written
-
-    Args:
-        filename (str, optional): _description_. Defaults to "".
-        text (str, optional): _description_. Defaults to "".
+    a function that writes a string to a text file (UTF8)
+    and returns the number of characters written
     """
-    
-    with open(filename, 'w', encoding='utf-8') as file:
+
+    with open(filename, 'w') as file:
         return file.write(text)

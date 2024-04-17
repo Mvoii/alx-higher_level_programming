@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
-"""Create an object from a json file"""
+"""Create an object from a JSON file"""
 
 import json
-"""provides functions nessessary"""
+"""Provides the functions needed for converting"""
+
 
 def load_from_json_file(filename):
-    """a function that creates an object from json"""
-    with open(filename, 'r') as file:
+    """a function that creates an Object from a 'JSON file'"""
+    with open(filename) as file:
         return json.load(file)
