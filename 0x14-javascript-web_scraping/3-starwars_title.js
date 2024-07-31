@@ -18,4 +18,3 @@ request(apiurl, function (error, response, body) {
     console.log(content.title);
   }
 });
-

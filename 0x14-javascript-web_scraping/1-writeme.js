@@ -15,4 +15,3 @@ fs.writeFile(file, content, 'utf-8', error => {
     console.log(error);
   }
 });
-
